@@ -1,5 +1,9 @@
 # claude-code-hooks
 
+<p align="center">
+  <img src="assets/demo.svg" alt="claude-code-hooks demo" width="700"/>
+</p>
+
 Claude just rewrote your file. It's broken. You didn't commit.
 
 That's exactly what these hooks prevent.
