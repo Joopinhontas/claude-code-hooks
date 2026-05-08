@@ -4,20 +4,21 @@
       {
         "matcher": "Write|Edit",
         "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/hooks/auto-backup.sh"
-          }
+          { "type": "command", "command": "~/.claude/hooks/auto-backup.sh" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "~/.claude/hooks/dangerous-command-guard.sh" }
         ]
       }
     ],
     "Stop": [
       {
         "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/hooks/notify.sh"
-          }
+          { "type": "command", "command": "~/.claude/hooks/notify.sh" },
+          { "type": "command", "command": "~/.claude/hooks/git-autocommit.sh" }
         ]
       }
     ]
